@@ -112,6 +112,7 @@ button:hover, a:hover {
   <a class="active" href="javascript:void(0)">Home</a>
   <a href="html/login.html">Lohin</a>
   <a href="html/signup.html">Signup</a>
+  <a href="html/nan.html">ja-test</a>
 </div>
 
 <div class="content" style="display: flex;flex-direction: row;flex-wrap: wrap;">
@@ -140,18 +141,22 @@ button:hover, a:hover {
     <a href="#"><i class="fa fa-instagram"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-facebook"></i></a>
-    <p><button>Contact</button></p>
+    <p><button onclick="basha">Contact</button></p>
   </div> 
 </div>
 
 <div class="botm" style="background-color:darksalmon;text-align: center;display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
     <p>For Quality Matters :</p>
-    <a href="http://ok.xxx">
+    <a href="#">
         <button style="width: 20vw;">Click ME</button>
     </a>
 </div>
 
 <script>
+
+function basha(){
+  alert('Basha')
+}
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
