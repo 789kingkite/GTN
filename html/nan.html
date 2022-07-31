@@ -13,17 +13,22 @@
 
     <script>
         function myFunction() {
+            const min = {user_1:"king" ,user_2:"kite"}
             let x = document.getElementById("num").value;
             let rr;
-            if (x == 'basha'){
-                location.href="login.html"
+            // if (x in min){
+            //     location.href="login.html"
+            // }
+            // else if(x == 'bhanu'){
+            //     location.href="signup.html"
+            // }
+            // else{
+            //     rr="Fuck The Code"
+            // }
+            if (x == min.user_1 || x== min.user_2){
+                rr="success"
             }
-            else if(x == 'bhanu'){
-                location.href="signup.html"
-            }
-            else{
-                rr="Fuck The Code"
-            }
+
             document.getElementById("res").innerHTML=rr;
         }
     </script>
