@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hed{
+            background-color: burlywood;
+            width: 95vw;
+            height: 95vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: pink;
+            width: 35%;
+            height: 30%;
+            margin: auto;
+        }
+        .box1{
+            background-color: pink;
+            width: 35%;
+            height: 30%;
+            margin: auto;
+        }
+        .txt h1{
+            background-color: transparent;
+            color: red;
+            text-align: center;
+            text-transform: capitalize;
+            font-family:'Courier New', Courier, monospace;
+            text-shadow: 2px 1px black;
+        }
+        .img{
+            width: 4vw;
+            height: 8vh;
+            border-radius: 50%;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .txt p{
+            text-align: center;
+            font-size: medium;
+            font-weight: bolder;
+            letter-spacing: 1px;
+
+            
+            
+        }
+        nav{
+            height: 8vh;
+            width: 95vw;
+            margin: auto;
+        }
+        .back{
+            background-color:lightslategray;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            height: 6vh;
+            width: 90vw;
+            margin: auto;
+            border-radius: 5px;
+        }
+        .back .link{
+            word-spacing: 15px;
+            margin-right: 10px;
+        }
+        .back .link a{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .logo{
+            margin-left: 10px;
+            text-transform: uppercase;
+            color: purple;
+        }
+        .srch{
+            display: flex;
+            flex-direction: row;
+
+        }
+        .srch input{
+            border: none;
+            height: 4.5vh;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .srch button{
+            background-color:dimgrey;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-transform: capitalize;
+            font-weight: bolder;
+            color: beige;
+        }
+
+        clg{
+            width: 95vw;
+            height: 75vh;
+            
+
+            margin-top: 2vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+       
+        @media screen and (max-width: 750px) {
+            .back{
+                display: flex;
+                flex-direction: column;
+
+            }
+            .back .logo{
+                display: block;
+                position: relative;
+                left: -35vw;
+                top:-3.2vh
+
+            }
+            .back .srch{
+                display: block;
+                position: relative;
+                left: 19vw;
+                top:-11.5vh
+            }
+            .back .srch button{
+                padding: 5px 5px;
+                background-color: darkturquoise;
+                color: black;
+            }
+
+            .back .link{
+                position: relative;
+                top: -10vh;
+                
+                width: 50vw;
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+
+            }
+            clg{
+                margin-top: 3vh;
+            }
+                
+            }
+            .gtn{
+                border-color: wheat;
+                height: 60vh;
+                width: 95vw;
+                flex-direction: column;
+            }
+            .gtn1{
+                border-color: wheat;
+                height: 60vh;
+                width: 95vw;
+                flex-direction: column;
+            }
+            .gtn .logo,
+            .gtn1 .logo{
+                width: 25vw;
+                height: 30vh;
+                margin: auto;
+            }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="back">
+            <div class="logo">
+                <h2>basha</h2>
+            </div>
+            <div class="srch">
+                <input type="text" title="" placeholder="College name" />
+                <button>search</button>
+            </div>
+            <div class="link">
+                <a href="#">basha</a>
+                <a href="#">basha</a>
+                <a href="#">basha</a>
+            </div>
+        </div>
+    </nav>
+    <clg>
+        <div class="gtn" style="background-color: red;display: flex;flex-direction: row;">
+            <div class="logo"><p>logo</p></div>
+            <div class="info"><p>basha</p></div>
+            
+        </div>
+        <div class="gtn" style="background-color: green;margin-top: 1vh;">
+            <div class="logo"><p>logo-2</p></div>
+            <div class="info"><p>basha</p></div>
+        </div>
+    </clg>
+    <!-- <div class="hed">
+        <div class="box">
+            <div class="img">
+                <img src="index.jpg" alt="basha" style="width: 100%;">
+            </div>
+            <div class="txt">
+                <h1>this is basha</h1>
+                <P>POWER OF CSE-B <br> I-YEAR BOYS</P>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="index.jpg" alt="basha" style="width: 100%;height: 100%;">
+            </div>
+            <div class="txt">
+                <h1>this is basha</h1>
+                <P>POWER OF CSE-B <br> I-YEAR BOYS</P>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="img">
+                <img src="index.jpg" alt="basha" style="width: 100%;">
+            </div>
+            <div class="txt">
+                <h1>this is basha</h1>
+                <P>POWER OF CSE-B <br> I-YEAR BOYS</P>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="img">
+                <img src="index.jpg" alt="basha" style="width: 100%;">
+            </div>
+            <div class="txt">
+                <h1>this is basha</h1>
+                <P>POWER OF CSE-B <br> I-YEAR BOYS</P>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>
