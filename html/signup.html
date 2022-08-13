@@ -77,20 +77,20 @@ button:hover {
     </style>
 </head>
 <body>
-    <form action="action_page.php" style="border:1px solid #ccc">
+    <div>
         <div class="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
           <hr>
       
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="text" placeholder="Enter Email" name="email" required id="emailid" >
       
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="usr"><b>User Name</b></label>
+          <input type="text" placeholder="Enter User Name" name="psw" required id="usrid">
       
           <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required id="passid">
       
           <label>
             <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -100,9 +100,28 @@ button:hover {
       
           <div class="clearfix">
             <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="submit" class="signupbtn" onclick="sign()">Sign Up</button>
+            <p id="res"></p>
           </div>
         </div>
-      </form> 
+      </div>
+    <script>
+      let usr_main = []
+      function sign() {
+
+        let usrnm = document.getElementById("usrid").value;
+        let pswd = document.getElementById("passid").value;
+
+        if (usrnm==0){
+        usr_main.push(usrnm)
+        let val = "Added as first user"
+        document.getElementById("res").innerHTML=val;
+        }
+        console.log("ok")
+        if (pswd == )
+      }
+
+
+    </script>
 </body>
 </html>

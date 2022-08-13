@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
-<body>
-    <input id="num" type="text" placeholder="name">
-    <button type="button" onclick="myFunction()"> click me</button>
+<body> 
+    <input id="num" type="text" placeholder="add" id="ad">
+    <button type="button" onclick="addd()"> Add</button>
     <p id="res"></p>
+    <input type="text" placeholder="Search" id="sh"> 
+    <button type="button" onclick="sear()">Search</button>
+    <p id="res1"></p>
 
     <script>
-        function myFunction() {
-            const min = {user_1:"king" ,user_2:"kite"}
-            let x = document.getElementById("num").value;
-            let rr;
-            // if (x in min){
-            //     location.href="login.html"
-            // }
-            // else if(x == 'bhanu'){
-            //     location.href="signup.html"
-            // }
-            // else{
-            //     rr="Fuck The Code"
-            // }
-            if (x == min.user_1 || x== min.user_2){
-                rr="success"
-            }
+        function addd(){
+            let root =[]
+            let aa;
+            let nam = document.getElementById("ad").value;
+            root.push(nam)
+            aa="Success"
+            document.getElementById("res").innerHTML=aa;
+        }
 
-            document.getElementById("res").innerHTML=rr;
+
+        function sear(){
+            let val2=document.getElementById("sh").value;
+            if (val2=="admin"){
+                document.getElementById("res1").innerHTML=root;
+            }
         }
     </script>
 

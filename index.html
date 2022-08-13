@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: 
   padding: 30px;
   text-align: center;
 }
@@ -20,6 +20,7 @@ body {
   overflow: hidden;
   background-color: #333;
 }
+
 
 #navbar a {
   float: left;
@@ -99,26 +100,44 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+
+/* .content{
+  background-image: url("mky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+} */
+.bdy{
+  width: 100vw;
+  height: 50vh;
+  background-color: #333;
+  margin: 10%;
+}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h2>Johnny Sensei</h2>
-  <p>The Updated Version In Earth</p>
+  <h2>Kings Only</h2>
+  <p>Who Deserve It</p>
   <!-- <input type="text" name="search" placeholder="Search..">  -->
 </div>
 
 <div id="navbar">
   <a class="active" href="javascript:void(0)">Home</a>
-  <a href="html/login.html">Lohin</a>
-  <a href="html/signup.html">Signup</a>
-  <a href="html/nan.html">ja-test</a>
+  <a href="html/login.html">Login</a>
+  <a href="html/signup.html">Sign-Up</a>
+  <a href="html/nan.html">JS</a>
 </div>
 
 <div class="content" style="display: flex;flex-direction: row;flex-wrap: wrap;">
   <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="bdy">
+
+</div>
 
 <div class="card">
   <img src="team2.jpg" alt="John" style="width:100%">
@@ -142,7 +161,7 @@ button:hover, a:hover {
     <a href="#"><i class="fa fa-instagram"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-facebook"></i></a>
-    <p><button onclick="fun()">Contact</button></p>
+    <p><button onclick="bbb()">Contact</button></p>
   </div> 
 </div>
 
@@ -170,7 +189,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-function fan() {
+function bbb() {
   location.href="https://www.instagram.com/basha__m__b_/";
 }
 function fan_1() {
